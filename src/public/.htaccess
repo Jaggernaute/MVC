@@ -1,0 +1,7 @@
+#rewite engine
+
+RewriteEngine On
+RewriteRule ^([A-z0-9_/-]*)$ index.php?uri=$1
+RewriteBase /
+
+ErrorDocument 404 index.php?uri=Error/notFound
